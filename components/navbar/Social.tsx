@@ -32,8 +32,8 @@ function Social() {
 
       {/* Company slogan */}
       <div className='text-xs font-medium italic text-center sm:text-right'>
-        'We can provide you quality services for local eldercare and senior
-        services'
+        We can provide you quality services for local eldercare and senior
+        services
       </div>
     </div>
   );
