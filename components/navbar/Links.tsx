@@ -48,7 +48,7 @@ function Links() {
             </div>
 
             {/* Label */}
-            <span className='font-semibold tracking-wide text-gray-100'>
+            <span className='font-sans tracking-wide text-gray-100'>
               {item.label}
             </span>
           </Link>

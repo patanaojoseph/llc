@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className='bg-teal-800'>
       {/* Top section (Logo + Social) with bottom border inside Container */}
-      <Container className='flex flex-col sm:flex-row sm:justify-between sm:items-center py-4 gap-4 sm:gap-0 border-b border-gray-200'>
+      <Container className='flex flex-col sm:flex-row sm:justify-between sm:items-center py-4 gap-4 sm:gap-0 border-b border-gray-100'>
         {/* Logo */}
         <div className='flex justify-center sm:justify-start w-full sm:w-auto'>
           <Logo />

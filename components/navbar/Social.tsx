@@ -38,7 +38,12 @@
 //   );
 // }
 
-import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaLinkedin,
+  FaTwitter,
+  FaTelegram,
+} from "react-icons/fa";
 
 function Social() {
   return (
@@ -83,8 +88,14 @@ function Social() {
         <a href='#' className='p-2 rounded-lg bg-blue-500 text-white'>
           <FaFacebookSquare className='text-lg' />
         </a>
+        <a href='#' className='p-2 rounded-lg bg-blue-400 text-white'>
+          <FaTwitter className='text-lg' />
+        </a>
         <a href='#' className='p-2 rounded-lg bg-indigo-500 text-white'>
           <FaLinkedin className='text-lg' />
+        </a>
+        <a href='#' className='p-2 rounded-lg bg-blue-400 text-white'>
+          <FaTelegram className='text-lg' />
         </a>
       </div>
 
