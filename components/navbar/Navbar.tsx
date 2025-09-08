@@ -1,17 +1,27 @@
 import Container from "../global/Container";
-import DarkMode from "./DarkMode";
 import Links from "./Links";
 import Logo from "./Logo";
+import Social from "./Social";
 
 function Navbar() {
   return (
-    <nav className='border-b border-gray-100'>
-      <Container className='flex flex-col sm:flex-row sm:justify-between flex-wrap sm:items-center py-8'>
-        <Logo />
-        <div className='flex gap-4 items-center'>
-          <Links />
-          <DarkMode />
+    <nav>
+      {/* Top section (Logo + Social) with bottom border inside Container */}
+      <Container className='flex flex-col sm:flex-row sm:justify-between sm:items-center py-4 gap-4 sm:gap-0 border-b border-gray-200'>
+        {/* Logo */}
+        <div className='flex justify-center sm:justify-start w-full sm:w-auto'>
+          <Logo />
         </div>
+
+        {/* Social */}
+        <div className='flex flex-col items-center sm:items-end gap-2 w-full sm:w-auto'>
+          <Social />
+        </div>
+      </Container>
+
+      {/* Links section with same width as Container */}
+      <Container className='py-3 border-b border-gray-200'>
+        <Links />
       </Container>
     </nav>
   );
