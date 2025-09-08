@@ -86,16 +86,16 @@ function Social() {
       {/* Social Links */}
       <div className='flex items-center gap-2'>
         <a href='#' className='p-2 rounded-lg bg-blue-500 text-white'>
-          <FaFacebookSquare className='text-lg' />
+          <FaFacebookSquare className='text-sm' />
         </a>
         <a href='#' className='p-2 rounded-lg bg-blue-400 text-white'>
-          <FaTwitter className='text-lg' />
+          <FaTwitter className='text-sm' />
         </a>
         <a href='#' className='p-2 rounded-lg bg-indigo-500 text-white'>
-          <FaLinkedin className='text-lg' />
+          <FaLinkedin className='text-sm' />
         </a>
         <a href='#' className='p-2 rounded-lg bg-blue-400 text-white'>
-          <FaTelegram className='text-lg' />
+          <FaTelegram className='text-sm' />
         </a>
       </div>
 
