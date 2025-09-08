@@ -2,107 +2,198 @@ import Link from "next/link";
 
 function Logo() {
   return (
+    // <Link
+    //   href='/'
+    //   className='group relative flex items-center space-x-5 transition-all duration-500 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:ring-offset-2 rounded-3xl p-3 -m-3'
+    // >
+    //   {/* Premium Background Glow */}
+    //   <div className='absolute inset-0 rounded-3xl bg-gradient-to-r from-blue-500/5 via-emerald-400/5 to-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700'></div>
+
+    //   {/* Icon Container - Senior Care Themed */}
+    //   <div className='relative flex h-16 w-16 items-center justify-center rounded-3xl bg-gradient-to-br from-blue-500 via-blue-600 to-emerald-500 shadow-2xl transition-all duration-500 group-hover:shadow-3xl group-hover:from-blue-400 group-hover:via-blue-500 group-hover:to-emerald-400 group-hover:rotate-[1deg]'>
+    //     {/* Shimmer Effect */}
+    //     <div className='absolute inset-0 rounded-3xl bg-gradient-to-tr from-transparent via-white/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700'></div>
+
+    //     {/* Glass Effect */}
+    //     <div className='absolute inset-0 rounded-3xl bg-white/15 backdrop-blur-sm border border-white/30'></div>
+
+    //     {/* Caring Hands + Heart Icon - Perfect for Elder Care */}
+    //     <svg
+    //       className='h-8 w-8 text-white relative z-10 transition-transform duration-300 group-hover:scale-110'
+    //       fill='none'
+    //       stroke='currentColor'
+    //       viewBox='0 0 24 24'
+    //     >
+    //       {/* Caring hands outline */}
+    //       <path
+    //         strokeLinecap='round'
+    //         strokeLinejoin='round'
+    //         strokeWidth={1.8}
+    //         d='M7 21h10M12 3v18M8 7l4-4 4 4M8 13l4-4 4 4'
+    //       />
+    //       {/* Heart in center */}
+    //       <path
+    //         strokeLinecap='round'
+    //         strokeLinejoin='round'
+    //         strokeWidth={2.2}
+    //         d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'
+    //         className='opacity-90'
+    //       />
+    //     </svg>
+
+    //     {/* Trust indicators */}
+    //     <div className='absolute -top-1.5 -right-1.5 h-3 w-3 rounded-full bg-emerald-400 animate-pulse'></div>
+    //     <div className='absolute -top-1.5 -right-1.5 h-3 w-3 rounded-full bg-emerald-400'></div>
+    //   </div>
+
+    //   {/* Enhanced Text Content */}
+    //   <div className='flex flex-col leading-tight space-y-0.5'>
+    //     {/* Main Brand Name */}
+    //     <div className='flex items-center space-x-3'>
+    //       <span className='text-5xl font-black bg-gradient-to-r from-blue-700 via-blue-600 to-emerald-600 bg-clip-text text-transparent tracking-tight relative'>
+    //         CES
+    //         {/* Premium underline effect */}
+    //         <div className='absolute -bottom-1 left-0 h-0.5 w-0 bg-gradient-to-r from-blue-600 to-emerald-500 transition-all duration-700 group-hover:w-full'></div>
+    //       </span>
+
+    //       {/* Elegant separator */}
+    //       <div className='flex flex-col space-y-0.5'>
+    //         <div className='h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse [animation-delay:0ms]'></div>
+    //         <div className='h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse [animation-delay:200ms]'></div>
+    //         <div className='h-1.5 w-1.5 rounded-full bg-blue-600 animate-pulse [animation-delay:400ms]'></div>
+    //       </div>
+    //     </div>
+
+    //     {/* Company Type */}
+    //     <div className='flex items-center space-x-2'>
+    //       <span className='text-base font-bold text-slate-700 dark:text-slate-200 tracking-wider'>
+    //         Geriatric Care
+    //       </span>
+    //       <span className='px-3 py-1 text-xs font-bold text-white bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full shadow-md'>
+    //         LLC
+    //       </span>
+    //     </div>
+
+    //     {/* Enhanced Tagline */}
+    //     <div className='flex items-center space-x-2 mt-1'>
+    //       <div className='h-px w-8 bg-gradient-to-r from-blue-500 to-emerald-400'></div>
+    //       <span className='text-sm font-medium text-slate-600 dark:text-slate-300 italic'>
+    //         Compassionate Excellence in Senior Care
+    //       </span>
+    //     </div>
+
+    //     {/* Professional Trust Indicators */}
+    //     <div className='flex items-center space-x-3 mt-2'>
+    //       <div className='flex space-x-1'>
+    //         <div className='h-2 w-2 rounded-full bg-emerald-500 animate-pulse'></div>
+    //         <div className='h-2 w-2 rounded-full bg-blue-500'></div>
+    //         <div className='h-2 w-2 rounded-full bg-indigo-500'></div>
+    //       </div>
+    //       <span className='text-xs font-semibold text-slate-500 dark:text-slate-400 tracking-wide'>
+    //         Licensed • Trusted • Caring
+    //       </span>
+    //     </div>
+    //   </div>
+
+    //   {/* Premium floating particles */}
+    //   <div className='absolute inset-0 pointer-events-none'>
+    //     <div className='absolute top-3 left-10 w-1 h-1 bg-blue-400/30 rounded-full animate-ping opacity-0 group-hover:opacity-100 [animation-delay:100ms]'></div>
+    //     <div className='absolute bottom-4 right-8 w-1.5 h-1.5 bg-emerald-400/30 rounded-full animate-ping opacity-0 group-hover:opacity-100 [animation-delay:400ms]'></div>
+    //     <div className='absolute top-1/2 right-4 w-0.5 h-0.5 bg-blue-300/40 rounded-full animate-ping opacity-0 group-hover:opacity-100 [animation-delay:700ms]'></div>
+    //   </div>
+    // </Link>
+
     <Link
       href='/'
-      className='group relative flex items-center space-x-4 transition-all duration-500 hover:scale-[1.02] rounded-2xl p-2 -m-2'
+      className='group relative flex items-center space-x-5 transition-all duration-500 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:ring-offset-2 rounded-3xl p-3 -m-3'
     >
-      {/* Animated Background Glow */}
-      <div className='absolute inset-0 rounded-2xl bg-gradient-to-r from-rose-500/5 via-transparent to-rose-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
+      {/* Premium Background Glow */}
+      <div className='absolute inset-0 rounded-3xl bg-gradient-to-r from-blue-500/5 via-emerald-400/5 to-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700'></div>
 
-      {/* Icon Container with Enhanced Animation */}
-      <div className='relative flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-rose-300 via-rose-400 to-rose-500 shadow-xl transition-all duration-500 group-hover:shadow-2xl group-hover:from-rose-500 group-hover:via-rose-600 group-hover:to-rose-700 group-hover:rotate-[2deg]'>
+      {/* Icon Container - Senior Care Themed */}
+      <div className='relative flex h-16 w-16 items-center justify-center rounded-3xl bg-gradient-to-br from-blue-500 via-blue-600 to-emerald-500 shadow-2xl transition-all duration-500 group-hover:shadow-3xl group-hover:from-blue-400 group-hover:via-blue-500 group-hover:to-emerald-400 group-hover:rotate-[1deg]'>
         {/* Shimmer Effect */}
-        <div className='absolute inset-0 rounded-2xl bg-gradient-to-tr from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700'></div>
+        <div className='absolute inset-0 rounded-3xl bg-gradient-to-tr from-transparent via-white/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700'></div>
 
         {/* Glass Effect */}
-        <div className='absolute inset-0 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20'></div>
+        <div className='absolute inset-0 rounded-3xl bg-white/15 backdrop-blur-sm border border-white/30'></div>
 
-        {/* Pulsing Ring */}
-        <div className='absolute inset-0 rounded-2xl border-2 border-rose-400/30 animate-pulse'></div>
-
-        {/* Enhanced Shield with Cross Icon - Representing Protection & Healthcare */}
+        {/* Caring Hands + Heart Icon - Perfect for Elder Care */}
         <svg
-          className='h-7 w-7 text-white relative z-10 transition-transform duration-300 group-hover:scale-110'
+          className='h-8 w-8 text-white relative z-10 transition-transform duration-300 group-hover:scale-110'
           fill='none'
           stroke='currentColor'
           viewBox='0 0 24 24'
         >
-          {/* Shield outline */}
+          {/* Caring hands outline */}
           <path
             strokeLinecap='round'
             strokeLinejoin='round'
-            strokeWidth={2}
-            d='M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z'
+            strokeWidth={1.8}
+            d='M7 21h10M12 3v18M8 7l4-4 4 4M8 13l4-4 4 4'
           />
-          {/* Medical cross inside shield */}
+          {/* Heart in center */}
           <path
             strokeLinecap='round'
             strokeLinejoin='round'
-            strokeWidth={2.5}
-            d='M12 8v8M8 12h8'
+            strokeWidth={2.2}
+            d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'
             className='opacity-90'
           />
         </svg>
 
-        {/* Small decorative dots */}
-        <div className='absolute -top-1 -right-1 h-2 w-2 rounded-full bg-green-400 animate-ping'></div>
-        <div className='absolute -top-1 -right-1 h-2 w-2 rounded-full bg-green-400'></div>
+        {/* Trust indicators */}
+        <div className='absolute -top-1.5 -right-1.5 h-3 w-3 rounded-full bg-emerald-400 animate-pulse'></div>
+        <div className='absolute -top-1.5 -right-1.5 h-3 w-3 rounded-full bg-emerald-400'></div>
       </div>
 
       {/* Enhanced Text Content */}
-      <div className='flex flex-col leading-tight space-y-0.1'>
-        {/* Main Brand Name with Advanced Effects */}
-        <div className='flex items-center space-x-2'>
-          <span className='text-4xl font-black bg-gradient-to-r from-rose-300 via-rose-400 to-rose-500 bg-clip-text text-transparent tracking-tight relative'>
+      <div className='flex flex-col leading-tight space-y-0.5'>
+        {/* Main Brand Name */}
+        <div className='flex items-center space-x-3'>
+          <span className='text-4xl font-black bg-gradient-to-r from-blue-500 via-blue-400 to-emerald-400 bg-clip-text text-transparent tracking-tight relative'>
             CES
-            {/* Subtle underline effect */}
-            <div className='absolute -bottom-[-1px] left-0 h-0.5 w-0 bg-gradient-to-r from-rose-400 to-rose-600 transition-all duration-500 group-hover:w-full'></div>
+            {/* Premium underline effect */}
+            <div className='absolute -bottom-1 left-0 h-0.5 w-0 bg-gradient-to-r from-blue-500 to-emerald-400 transition-all duration-700 group-hover:w-full'></div>
           </span>
-
-          {/* Animated separator */}
-          <div className='flex flex-col space-y-0.5 mt-2'>
-            <div className='h-1 w-1 rounded-full bg-rose-600 animate-bounce [animation-delay:0ms]'></div>
-            <div className='h-1 w-1 rounded-full bg-rose-500 animate-bounce [animation-delay:150ms]'></div>
-            <div className='h-1 w-1 rounded-full bg-rose-700 animate-bounce [animation-delay:300ms]'></div>
-          </div>
         </div>
 
-        {/* Company Type with Enhanced Styling */}
-        <div className='flex items-center space-x-1 mt-[-4px]'>
-          <span className='text-sm font-semibold text-gray-500  tracking-wider'>
+        {/* Company Type */}
+        <div className='flex items-center space-x-2'>
+          <span className='text-base font-bold text-slate-700 dark:text-slate-200 tracking-wider'>
             Geriatric Care
           </span>
-          <span className='px-2 py-0.5 text-xs font-bold text-white bg-gradient-to-r from-rose-300 to-rose-500 rounded-full shadow-sm'>
+          <span className='px-3 py-1 text-xs font-bold text-white bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full shadow-md'>
             LLC
           </span>
         </div>
 
         {/* Enhanced Tagline */}
-        <div className='flex items-center space-x-1'>
-          <div className='h-px w-6 bg-gradient-to-r from-rose-400 to-transparent'></div>
-          <span className='text-xs font-medium text-gray-500  italic'>
+        <div className='flex items-center space-x-2'>
+          <div className='h-px w-8 bg-gradient-to-r from-blue-500 to-emerald-400'></div>
+          <span className='text-sm font-medium text-slate-200 italic'>
             Compassionate Excellence in Senior Care
           </span>
         </div>
 
-        {/* Professional Credentials Indicator */}
-        <div className='flex items-center space-x-2'>
+        {/* Professional Trust Indicators */}
+        <div className='flex items-center space-x-3'>
           <div className='flex space-x-1'>
-            <div className='h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse'></div>
-            <div className='h-1.5 w-1.5 rounded-full bg-rose-500'></div>
-            <div className='h-1.5 w-1.5 rounded-full bg-purple-500'></div>
+            <div className='h-2 w-2 rounded-full bg-emerald-500 animate-pulse'></div>
+            <div className='h-2 w-2 rounded-full bg-blue-500'></div>
+            <div className='h-2 w-2 rounded-full bg-indigo-500'></div>
           </div>
-          <span className='text-[12px] font-medium text-gray-400 '>
-            Licensed • Trusted • Professional
+          <span className='text-xs font-semibold text-slate-200  tracking-wide'>
+            Licensed • Trusted • Caring
           </span>
         </div>
       </div>
 
-      {/* Hover Effect Particles */}
-      <div className='absolute top-0 left-0 w-full h-full pointer-events-none'>
-        <div className='absolute top-2 left-8 w-1 h-1 bg-rose-400/40 rounded-full animate-ping opacity-0 group-hover:opacity-100 [animation-delay:100ms]'></div>
-        <div className='absolute bottom-3 right-6 w-1 h-1 bg-rose-500/40 rounded-full animate-ping opacity-0 group-hover:opacity-100 [animation-delay:300ms]'></div>
-        <div className='absolute top-1/2 right-2 w-0.5 h-0.5 bg-rose-300/60 rounded-full animate-ping opacity-0 group-hover:opacity-100 [animation-delay:500ms]'></div>
+      {/* Premium floating particles */}
+      <div className='absolute inset-0 pointer-events-none'>
+        <div className='absolute top-3 left-10 w-1 h-1 bg-blue-400/30 rounded-full animate-ping opacity-0 group-hover:opacity-100 [animation-delay:100ms]'></div>
+        <div className='absolute bottom-4 right-8 w-1.5 h-1.5 bg-emerald-400/30 rounded-full animate-ping opacity-0 group-hover:opacity-100 [animation-delay:400ms]'></div>
+        <div className='absolute top-1/2 right-4 w-0.5 h-0.5 bg-blue-300/40 rounded-full animate-ping opacity-0 group-hover:opacity-100 [animation-delay:700ms]'></div>
       </div>
     </Link>
   );

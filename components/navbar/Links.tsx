@@ -1,41 +1,59 @@
 import Link from "next/link";
-import { FaHome } from "react-icons/fa";
-import { RiTeamFill } from "react-icons/ri";
-import { MdMedicalServices } from "react-icons/md";
-import { BsFillTelephoneFill } from "react-icons/bs";
+import { FaHome, FaHeart, FaUsers, FaPhoneAlt } from "react-icons/fa";
+import { MdElderly, MdHealthAndSafety } from "react-icons/md";
 
 function Links() {
-  return (
-    <div className='flex justify-center sm:justify-end gap-6 text-sm font-medium text-gray-600'>
-      <Link
-        href='/'
-        className='flex items-center gap-1 text-gray-500 hover:text-rose-400 hover:underline transition-colors font-medium'
-      >
-        <FaHome className='h-4 w-4' />
-        <span>Home</span>
-      </Link>
+  const navItems = [
+    {
+      href: "/",
+      icon: FaHome,
+      label: "Home",
+      color: "from-blue-500 to-blue-600",
+    },
+    {
+      href: "/services",
+      icon: MdHealthAndSafety,
+      label: "Services",
+      color: "from-emerald-500 to-emerald-600",
+    },
+    {
+      href: "/about",
+      icon: FaUsers,
+      label: "About",
+      color: "from-indigo-500 to-indigo-600",
+    },
+    {
+      href: "/contact",
+      icon: FaPhoneAlt,
+      label: "Contact",
+      color: "from-rose-500 to-rose-600",
+    },
+  ];
 
-      <Link
-        href='/services'
-        className='flex items-center gap-1 text-gray-500 hover:text-rose-400 hover:underline transition-colors font-medium'
-      >
-        <MdMedicalServices className='h-4 w-4' />
-        <span>Services</span>
-      </Link>
-      <Link
-        href='/about'
-        className='flex items-center gap-1 text-gray-500 hover:text-rose-400 hover:underline transition-colors font-medium'
-      >
-        <RiTeamFill className='h-4 w-4' />
-        <span>About</span>
-      </Link>
-      <Link
-        href='/contact'
-        className='flex items-center gap-1 text-gray-500 hover:text-rose-400 hover:underline transition-colors font-medium'
-      >
-        <BsFillTelephoneFill className='h-4 w-4' />
-        <span>Contact</span>
-      </Link>
+  return (
+    <div className='flex flex-wrap justify-center lg:justify-end gap-4 text-sm'>
+      {navItems.map((item) => {
+        const IconComponent = item.icon;
+        return (
+          <Link
+            key={item.href}
+            href={item.href}
+            className='group relative flex items-center gap-2 px-4 rounded-xl '
+          >
+            {/* Icon container with gradient */}
+            <div
+              className={`p-2 rounded-lg bg-gradient-to-r ${item.color} text-white shadow-sm  transition-all duration-300`}
+            >
+              <IconComponent className='h-4 w-4' />
+            </div>
+
+            {/* Label */}
+            <span className='font-semibold tracking-wide text-gray-100'>
+              {item.label}
+            </span>
+          </Link>
+        );
+      })}
     </div>
   );
 }

@@ -14,7 +14,7 @@ function Hero() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
           voluptatibus!
         </p>
-        <Button asChild size='lg' className='mt-8 bg-rose-300'>
+        <Button asChild size='lg' className='mt-8 bg-teal-700 text-gray-100'>
           <Link href='/services'>Learn More</Link>
         </Button>
       </div>
