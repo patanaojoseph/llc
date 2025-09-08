@@ -1,4 +1,3 @@
-import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 import { FaFacebookSquare, FaLinkedin, FaLocationArrow } from "react-icons/fa";
 
 function Social() {
