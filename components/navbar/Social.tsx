@@ -47,11 +47,11 @@ function Social() {
   return (
     <div className='flex flex-col lg:items-end items-center gap-2 text-white/90'>
       <div className='flex items-center gap-2'>
-        {/* <div className='w-8 h-px bg-gradient-to-r from-transparent to-white/30 hidden lg:block' /> */}
+        <div className='w-8 h-px bg-gradient-to-r from-transparent to-white/30 hidden lg:block' />
         <span className='text-xs font-medium text-white/60 tracking-wider uppercase'>
           Connect With Us
         </span>
-        {/* <div className='w-8 h-px bg-gradient-to-l from-transparent to-white/30 lg:hidden' /> */}
+        <div className='w-8 h-px bg-gradient-to-l from-transparent to-white/30 lg:hidden' />
       </div>
       {/* Enhanced Social Links */}
       <div className='flex items-center gap-2'>
