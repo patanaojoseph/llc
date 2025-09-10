@@ -15,13 +15,14 @@ function Navbar() {
 
         {/* Social */}
         <div className='flex flex-col items-center sm:items-end gap-2 w-full sm:w-auto'>
-          <Social />
+          <Links />
         </div>
       </Container>
 
       {/* Links section with same width as Container */}
       <Container className='py-3 border-gray-200'>
-        <Links />
+        {/* <Links /> */}
+        <Social />
       </Container>
     </nav>
 

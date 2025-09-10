@@ -158,6 +158,14 @@ function Logo() {
           </span>
         </div>
 
+        {/* Enhanced Tagline */}
+        <div className='flex items-center space-x-2'>
+          {/* <div className='h-px w-8 bg-gradient-to-r from-blue-500 to-emerald-400'></div> */}
+          <span className='text-xs text-slate-200 italic'>
+            Compassionate Excellence in Senior Care
+          </span>
+        </div>
+
         {/* Company Type */}
         <div className='flex items-center space-x-2'>
           <span className='text-base font-bold text-slate-700 dark:text-slate-200 tracking-wider'>
@@ -168,21 +176,13 @@ function Logo() {
           </span>
         </div>
 
-        {/* Enhanced Tagline */}
-        <div className='flex items-center space-x-2'>
-          {/* <div className='h-px w-8 bg-gradient-to-r from-blue-500 to-emerald-400'></div> */}
-          <span className='text-xs text-slate-200 italic'>
-            Compassionate Excellence in Senior Care
-          </span>
-        </div>
-
         {/* Professional Trust Indicators */}
         <div className='flex items-center space-x-2'>
-          {/* <div className='flex space-x-1'>
+          <div className='flex space-x-1'>
             <div className='h-2 w-2 rounded-full bg-emerald-500 animate-pulse'></div>
             <div className='h-2 w-2 rounded-full bg-blue-500'></div>
             <div className='h-2 w-2 rounded-full bg-indigo-500'></div>
-          </div> */}
+          </div>
           <span className='text-[9px] font-semibold text-slate-200 tracking-wide'>
             Licensed • Trusted • Caring
           </span>

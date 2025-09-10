@@ -1,43 +1,3 @@
-// import { FaFacebookSquare, FaLinkedin, FaLocationArrow } from "react-icons/fa";
-
-// function Social() {
-//   return (
-//     <div className='flex flex-col sm:items-end items-center gap-1 text-gray-600'>
-//       {/* Phone */}
-//       <a
-//         href='tel:+18325551234'
-//         className='flex items-center gap-2 font-semibold  transition-colors'
-//       >
-//         <FaFacebookSquare className='text-xs' />
-//         <span className='text-xs'>link@facebook.com</span>
-//       </a>
-
-//       {/* Email */}
-//       <a
-//         href='mailto:info@cescare.com'
-//         className='flex items-center gap-2 font-semibold  transition-colors'
-//       >
-//         <FaLinkedin className='text-xs' />
-//         <span className='text-xs'>info@cescare.com</span>
-//       </a>
-
-//       {/* Location */}
-//       <div className='flex items-center gap-2 font-semibold'>
-//         <FaLocationArrow className='text-xs' />
-//         <span className='text-xs text-center sm:text-right'>
-//           1234 Main St, Houston, TX
-//         </span>
-//       </div>
-
-//       {/* Company slogan */}
-//       <div className='text-xs font-medium italic text-center sm:text-right'>
-//         We can provide you quality services for local eldercare and senior
-//         services
-//       </div>
-//     </div>
-//   );
-// }
-
 import {
   FaFacebookSquare,
   FaLinkedin,
@@ -46,63 +6,126 @@ import {
 } from "react-icons/fa";
 
 function Social() {
+  const socialLinks = [
+    {
+      href: "https://facebook.com/yourpage",
+      icon: FaFacebookSquare,
+      label: "Facebook",
+      ariaLabel: "Visit our Facebook page",
+      color:
+        "hover:bg-blue-500/20 hover:border-blue-400/30 hover:text-blue-300",
+      glowColor: "group-hover:shadow-blue-400/20",
+    },
+    {
+      href: "https://twitter.com/yourhandle",
+      icon: FaTwitter,
+      label: "Twitter",
+      ariaLabel: "Follow us on Twitter",
+      color: "hover:bg-sky-500/20 hover:border-sky-400/30 hover:text-sky-300",
+      glowColor: "group-hover:shadow-sky-400/20",
+    },
+    {
+      href: "https://linkedin.com/company/yourcompany",
+      icon: FaLinkedin,
+      label: "LinkedIn",
+      ariaLabel: "Connect with us on LinkedIn",
+      color:
+        "hover:bg-blue-600/20 hover:border-blue-500/30 hover:text-blue-300",
+      glowColor: "group-hover:shadow-blue-500/20",
+    },
+    {
+      href: "https://t.me/yourchannel",
+      icon: FaTelegram,
+      label: "Telegram",
+      ariaLabel: "Join our Telegram channel",
+      color:
+        "hover:bg-cyan-500/20 hover:border-cyan-400/30 hover:text-cyan-300",
+      glowColor: "group-hover:shadow-cyan-400/20",
+    },
+  ];
+
   return (
-    <div className='flex flex-col lg:items-end items-center gap-3 text-slate-200 '>
-      {/* Contact Information */}
-      {/* <div className='flex flex-col lg:items-end items-center gap-2'>
- 
-        <a
-          href='tel:+18325551234'
-          className='flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-800 transition-all duration-300 hover:scale-105 group'
-        >
-          <div className='p-2 rounded-full bg-gradient-to-r from-blue-100 to-emerald-100 dark:from-blue-900/30 dark:to-emerald-900/30 group-hover:from-blue-200 group-hover:to-emerald-200'>
-            <FaPhoneAlt className='text-sm text-blue-600 dark:text-blue-400' />
-          </div>
-          <span className='text-sm font-semibold'>(832) 555-1234</span>
-        </a>
+    <div className='flex flex-col lg:items-end items-center gap-2 text-white/90'>
+      {/* Enhanced Social Links */}
+      <div className='flex items-center gap-4'>
+        {socialLinks.map((social, index) => {
+          const IconComponent = social.icon;
+          return (
+            <a
+              key={social.label}
+              href={social.href}
+              className={`
+                group relative p-2 rounded-xl 
+                bg-white/5 border border-white/10
+                hover:bg-white/10 hover:border-white/20
+                ${social.color}
+                transition-all duration-300 ease-out
+                focus:outline-none focus:ring-2 focus:ring-white/40
+                focus:ring-offset-2 focus:ring-offset-teal-800
+                backdrop-blur-sm hover:scale-110 active:scale-95
+                hover:-translate-y-1
+              `}
+              title={`Follow us on ${social.label}`}
+              aria-label={social.ariaLabel}
+              style={{
+                animationDelay: `${index * 100}ms`,
+              }}
+            >
+              <IconComponent
+                className='
+                  h-4 w-4 text-white/70 
+                  group-hover:text-white group-hover:scale-110
+                  transition-all duration-300
+                '
+              />
 
+              {/* Enhanced glow effect */}
+              <div
+                className={`
+                  absolute inset-0 rounded-xl
+                  group-hover:shadow-lg ${social.glowColor}
+                  transition-all duration-300
+                `}
+              />
 
-        <a
-          href='mailto:info@cescare.com'
-          className='flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-800 transition-all duration-300 hover:scale-105 group'
-        >
-          <div className='p-2 rounded-full bg-gradient-to-r from-emerald-100 to-blue-100 dark:from-emerald-900/30 dark:to-blue-900/30 group-hover:from-emerald-200 group-hover:to-blue-200'>
-            <FaEnvelope className='text-sm text-emerald-600 dark:text-emerald-400' />
-          </div>
-          <span className='text-sm font-semibold'>info@cescare.com</span>
-        </a>
-
- 
-        <div className='flex items-center gap-3 px-3 py-2 rounded-lg'>
-          <div className='p-2 rounded-full bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-900/30 dark:to-purple-900/30'>
-            <FaMapMarkerAlt className='text-sm text-indigo-600 dark:text-indigo-400' />
-          </div>
-          <span className='text-sm font-semibold text-center lg:text-right'>
-            1234 Main St, Houston, TX
-          </span>
-        </div>
-      </div> */}
-
-      {/* Social Links */}
-      <div className='flex items-center gap-2'>
-        <a href='#' className='p-2 rounded-lg bg-blue-500 text-white'>
-          <FaFacebookSquare className='text-sm' />
-        </a>
-        <a href='#' className='p-2 rounded-lg bg-blue-400 text-white'>
-          <FaTwitter className='text-sm' />
-        </a>
-        <a href='#' className='p-2 rounded-lg bg-indigo-500 text-white'>
-          <FaLinkedin className='text-sm' />
-        </a>
-        <a href='#' className='p-2 rounded-lg bg-blue-400 text-white'>
-          <FaTelegram className='text-sm' />
-        </a>
+              {/* Ripple effect on hover */}
+              <div
+                className='
+                  absolute inset-0 rounded-xl border border-transparent
+                  group-hover:animate-pulse group-hover:border-white/20
+                  transition-all duration-300
+                '
+              />
+            </a>
+          );
+        })}
       </div>
 
-      {/* Tagline */}
-      <div className='text-xs font-medium italic text-center lg:text-right max-w-xs text-white leading-relaxed'>
-        &quot;Providing compassionate, professional care for your loved ones
-        with dignity and respect&quot;
+      {/* Connect with us text */}
+      <div className='flex flex-col items-center lg:items-end gap-2'>
+        <div className='flex items-center gap-2'>
+          <div className='w-8 h-px bg-gradient-to-r from-transparent to-white/30 hidden lg:block' />
+          <span className='text-sm font-medium text-white/60 tracking-wider uppercase'>
+            Connect With Us
+          </span>
+          <div className='w-8 h-px bg-gradient-to-l from-transparent to-white/30 lg:hidden' />
+        </div>
+
+        {/* Subtle decorative element */}
+        <div className='flex gap-1'>
+          <div
+            className='w-2 h-2 rounded-full bg-white/20 animate-pulse'
+            style={{ animationDelay: "0ms" }}
+          />
+          <div
+            className='w-2 h-2 rounded-full bg-white/15 animate-pulse'
+            style={{ animationDelay: "200ms" }}
+          />
+          <div
+            className='w-2 h-2 rounded-full bg-white/10 animate-pulse'
+            style={{ animationDelay: "400ms" }}
+          />
+        </div>
       </div>
     </div>
   );
