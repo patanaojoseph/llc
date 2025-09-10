@@ -66,7 +66,7 @@ function Logo() {
 
     //     {/* Company Type */}
     //     <div className='flex items-center space-x-2'>
-    //       <span className='text-base font-bold text-slate-700 dark:text-slate-200 tracking-wider'>
+    //       <span className='text-base font-bold text-slate-300 tracking-wider'>
     //         Geriatric Care
     //       </span>
     //       <span className='px-3 py-1 text-xs font-bold text-white bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full shadow-md'>
@@ -168,7 +168,7 @@ function Logo() {
 
         {/* Company Type */}
         <div className='flex items-center space-x-2'>
-          <span className='text-base font-bold text-slate-700 dark:text-slate-200 tracking-wider'>
+          <span className='text-base font-bold text-slate-300 tracking-wider'>
             Geriatric Care
           </span>
           <span className='px-3 py-1 text-xs font-bold text-white bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full shadow-md'>
