@@ -46,8 +46,15 @@ function Social() {
 
   return (
     <div className='flex flex-col lg:items-end items-center gap-2 text-white/90'>
+      <div className='flex items-center gap-2'>
+        {/* <div className='w-8 h-px bg-gradient-to-r from-transparent to-white/30 hidden lg:block' /> */}
+        <span className='text-xs font-medium text-white/60 tracking-wider uppercase'>
+          Connect With Us
+        </span>
+        {/* <div className='w-8 h-px bg-gradient-to-l from-transparent to-white/30 lg:hidden' /> */}
+      </div>
       {/* Enhanced Social Links */}
-      <div className='flex items-center gap-4'>
+      <div className='flex items-center gap-2'>
         {socialLinks.map((social, index) => {
           const IconComponent = social.icon;
           return (
@@ -73,7 +80,7 @@ function Social() {
             >
               <IconComponent
                 className='
-                  h-4 w-4 text-white/70 
+                  h-3 w-3 text-white/70 
                   group-hover:text-white group-hover:scale-110
                   transition-all duration-300
                 '
@@ -99,33 +106,6 @@ function Social() {
             </a>
           );
         })}
-      </div>
-
-      {/* Connect with us text */}
-      <div className='flex flex-col items-center lg:items-end gap-2'>
-        <div className='flex items-center gap-2'>
-          <div className='w-8 h-px bg-gradient-to-r from-transparent to-white/30 hidden lg:block' />
-          <span className='text-sm font-medium text-white/60 tracking-wider uppercase'>
-            Connect With Us
-          </span>
-          <div className='w-8 h-px bg-gradient-to-l from-transparent to-white/30 lg:hidden' />
-        </div>
-
-        {/* Subtle decorative element */}
-        <div className='flex gap-1'>
-          <div
-            className='w-2 h-2 rounded-full bg-white/20 animate-pulse'
-            style={{ animationDelay: "0ms" }}
-          />
-          <div
-            className='w-2 h-2 rounded-full bg-white/15 animate-pulse'
-            style={{ animationDelay: "200ms" }}
-          />
-          <div
-            className='w-2 h-2 rounded-full bg-white/10 animate-pulse'
-            style={{ animationDelay: "400ms" }}
-          />
-        </div>
       </div>
     </div>
   );

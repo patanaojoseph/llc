@@ -165,7 +165,7 @@ function ServicesCarousel() {
                     </p>
 
                     {/* Learn more indicator */}
-                    <div className='mt-4 flex items-center text-teal-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0'>
+                    {/* <div className='mt-4 flex items-center text-teal-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0'>
                       <span>Learn more</span>
                       <svg
                         className='ml-1 h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-300'
@@ -180,7 +180,7 @@ function ServicesCarousel() {
                           d='M9 5l7 7-7 7'
                         />
                       </svg>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Bottom accent */}

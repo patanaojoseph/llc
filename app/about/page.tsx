@@ -18,8 +18,11 @@ function AboutPage() {
 
       {/* Text */}
       <div className='text-center lg:text-left'>
-        <h1 className='text-4xl font-bold tracking-tight text-slate-800 sm:text-5xl'>
-          About Us
+        <h1 className='text-4xl md:text-4xl lg:text-4xl font-bold tracking-tight text-slate-700 mb-6'>
+          About{" "}
+          <span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-teal-800'>
+            Us
+          </span>
         </h1>
 
         {/* Accent underline */}
