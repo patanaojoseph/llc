@@ -15,9 +15,9 @@ function Hero() {
           of mind for seniors and their families.
         </p>
 
-        {/* <Button asChild size='lg' className='mt-8 bg-teal-700 text-gray-100'>
+        <Button asChild size='lg' className='mt-8 bg-teal-700 text-gray-100'>
           <Link href='/services'>Learn More</Link>
-        </Button> */}
+        </Button>
       </div>
       <HeroCarousel />
     </section>
