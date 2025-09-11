@@ -81,12 +81,12 @@ function Navbar() {
       )}
 
       {/* Sub-bar for contact emphasis */}
-      <div className='bg-teal-800 text-white text-sm sm:text-base font-medium py-2 text-center flex items-center justify-center gap-2 shadow-inner'>
+      {/* <div className='bg-teal-800 text-white text-sm sm:text-base font-medium py-2 text-center flex items-center justify-center gap-2 shadow-inner'>
         <FaPhoneAlt className='h-4 w-4 text-rose-100 animate-pulse' />
         <span className='text-xs sm:text-sm text-gray-300'>
           Need Immediate Assistance? Call us: 281-512-6064
         </span>
-      </div>
+      </div> */}
 
       {/* Animations */}
     </nav>
