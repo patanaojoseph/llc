@@ -31,7 +31,7 @@ function AboutPage() {
         <p className='text-lg leading-relaxed text-slate-600 '>
           With a team of{" "}
           <span className='font-semibold text-teal-600'>
-            trained, trustworthy, and empathetic caregivers
+            Trained, Trustworthy, and Empathetic Caregivers
           </span>
           , we are dedicated to enhancing quality of life and fostering a
           supportive environment where clients feel valued, respected, and truly

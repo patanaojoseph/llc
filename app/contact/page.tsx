@@ -461,13 +461,15 @@ function ContactPage() {
             <p className='text-rose-100 mb-4'>
               For urgent care needs outside of business hours
             </p>
-            <a
-              href='tel:5551234567'
-              className='inline-flex items-center bg-white text-rose-600 px-6 py-3 rounded-xl font-bold hover:bg-rose-50 transition-colors duration-300'
-            >
-              <Phone className='w-4 h-4 mr-2' />
-              Call Now: (555) 123-4567
-            </a>
+            <div className='flex justify-center mb-2'>
+              <a
+                href='tel:2815126064'
+                className='inline-flex items-center bg-white text-rose-600 px-6 py-3 rounded-xl font-bold hover:bg-rose-50 transition-colors duration-300'
+              >
+                <Phone className='w-4 h-4 mr-2' />
+                Call Now: 281-512-6064
+              </a>
+            </div>
           </div>
 
           {/* Promise */}

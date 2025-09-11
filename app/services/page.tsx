@@ -6,7 +6,7 @@ function ServicesPage() {
       <div className='relative max-w-7xl mx-auto px-6'>
         {/* Enhanced heading section */}
         <div className='text-center max-w-4xl mx-auto mb-'>
-          <h1 className='text-4xl md:text-4xl lg:text-4xl font-bold tracking-tight text-slate-700 mb-6'>
+          <h1 className='text-4xl md:text-4xl lg:text-4xl font-bold tracking-tight text-slate-700 mb-2'>
             Our{" "}
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-teal-800'>
               Services
