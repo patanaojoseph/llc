@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Clock, Send, Heart } from "lucide-react";
+import emailjs from "emailjs-com";
 
 function ContactPage() {
   const [formData, setFormData] = useState({
@@ -19,24 +20,55 @@ function ContactPage() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
+
+  //   const res = await fetch("/api/contact", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify(formData),
+  //   });
+
+  //   if (res.ok) {
+  //     alert("Message sent successfully!");
+  //     setFormData({ name: "", email: "", phone: "", message: "" }); // clear form
+  //   } else {
+  //     alert("Failed to send message. Please try again.");
+  //   }
+
+  //   setIsSubmitting(false);
+  // };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    try {
+      const result = await emailjs.send(
+        "service_rpgvawx", // your Service ID
+        "template_htrrj3g", // your Template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        },
+        "wDLXOUHWjn5DLy4so" // from Account > API Keys
+      );
 
-    if (res.ok) {
-      alert("Message sent successfully!");
-      setFormData({ name: "", email: "", phone: "", message: "" }); // clear form
-    } else {
-      alert("Failed to send message. Please try again.");
+      if (result.status === 200) {
+        alert("✅ Message sent successfully!");
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        alert("❌ Failed to send message. Try again.");
+      }
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      alert("⚠️ Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
-
-    setIsSubmitting(false);
   };
 
   const contactInfo = [
