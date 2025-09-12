@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Clock, Send, Heart } from "lucide-react";
 import emailjs from "emailjs-com";
+import { toast } from "sonner";
 
 function ContactPage() {
   const [formData, setFormData] = useState({
@@ -24,20 +25,31 @@ function ContactPage() {
   //   e.preventDefault();
   //   setIsSubmitting(true);
 
-  //   const res = await fetch("/api/contact", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify(formData),
-  //   });
+  //   try {
+  //     const result = await emailjs.send(
+  //       "service_rpgvawx", // your Service ID
+  //       "template_htrrj3g", // your Template ID
+  //       {
+  //         name: formData.name,
+  //         email: formData.email,
+  //         phone: formData.phone,
+  //         message: formData.message,
+  //       },
+  //       "wDLXOUHWjn5DLy4so" // from Account > API Keys
+  //     );
 
-  //   if (res.ok) {
-  //     alert("Message sent successfully!");
-  //     setFormData({ name: "", email: "", phone: "", message: "" }); // clear form
-  //   } else {
-  //     alert("Failed to send message. Please try again.");
+  //     if (result.status === 200) {
+  //       alert("✅ Message sent successfully!");
+  //       setFormData({ name: "", email: "", phone: "", message: "" });
+  //     } else {
+  //       alert("❌ Failed to send message. Try again.");
+  //     }
+  //   } catch (error) {
+  //     console.error("EmailJS error:", error);
+  //     alert("⚠️ Something went wrong. Please try again.");
+  //   } finally {
+  //     setIsSubmitting(false);
   //   }
-
-  //   setIsSubmitting(false);
   // };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -46,26 +58,34 @@ function ContactPage() {
 
     try {
       const result = await emailjs.send(
-        "service_rpgvawx", // your Service ID
-        "template_htrrj3g", // your Template ID
+        "service_rpgvawx",
+        "template_htrrj3g",
         {
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
           message: formData.message,
         },
-        "wDLXOUHWjn5DLy4so" // from Account > API Keys
+        "wDLXOUHWjn5DLy4so"
       );
 
       if (result.status === 200) {
-        alert("✅ Message sent successfully!");
+        toast.success("✅ Message sent successfully!", {
+          description: "Our team will get back to you soon.",
+          duration: 3000,
+        });
+
         setFormData({ name: "", email: "", phone: "", message: "" });
       } else {
-        alert("❌ Failed to send message. Try again.");
+        toast.error("❌ Failed to send message", {
+          description: "Please try again later.",
+        });
       }
     } catch (error) {
       console.error("EmailJS error:", error);
-      alert("⚠️ Something went wrong. Please try again.");
+      toast.error("⚠️ Something went wrong", {
+        description: "Please check your network and try again.",
+      });
     } finally {
       setIsSubmitting(false);
     }
