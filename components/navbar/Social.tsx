@@ -1,9 +1,5 @@
-import {
-  FaFacebookSquare,
-  FaLinkedin,
-  FaTwitter,
-  FaTelegram,
-} from "react-icons/fa";
+import { FaFacebookSquare, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaSquareThreads } from "react-icons/fa6";
 
 function Social() {
   const socialLinks = [
@@ -17,10 +13,10 @@ function Social() {
       glowColor: "group-hover:shadow-blue-400/20",
     },
     {
-      href: "https://twitter.com/yourhandle",
-      icon: FaTwitter,
-      label: "Twitter",
-      ariaLabel: "Follow us on Twitter",
+      href: "https://www.threads.com/",
+      icon: FaSquareThreads,
+      label: "Threads",
+      ariaLabel: "Follow us on Threads",
       color: "hover:bg-sky-500/20 hover:border-sky-400/30 hover:text-sky-300",
       glowColor: "group-hover:shadow-sky-400/20",
     },

@@ -525,7 +525,7 @@ function ContactPage() {
           </div>
 
           {/* Promise */}
-          <div className='bg-gradient-to-br from-emerald-500 to-teal-600 rounded-3xl p-6 text-white shadow-xl'>
+          <div className='bg-gradient-to-br from-teal-700 to-teal-700 rounded-3xl p-6 text-white shadow-xl'>
             <div className='flex items-center mb-4'>
               <Heart className='w-6 h-6 mr-3' />
               <h3 className='text-xl font-bold'>Our Promise</h3>
