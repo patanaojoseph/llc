@@ -40,10 +40,10 @@ function Links() {
             className='
               group relative flex items-center gap-2 px-5 py-2.5 
               rounded-lg transition-all duration-200 ease-out
-              text-gray/500 hover:text-white
-              hover:bg-purple-400/80 focus:bg-purple-400/90
+              text-gray/400 hover:text-white
+              hover:bg-teal-600/80 focus:bg-teal-600/90
               focus:outline-none focus:ring-2 focus:ring-white/30
-               hover:border-white/20 focus:text-gray-100
+               hover:border-white/20
               shadow-sm hover:shadow-md
             '
             title={item.description}
