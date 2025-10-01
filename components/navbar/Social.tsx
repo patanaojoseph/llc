@@ -77,7 +77,7 @@ function Social() {
               <IconComponent
                 className='
                   h-3 w-3 text-gray-500 
-                  group-hover:text-blue-500/80 group-hover:scale-110
+                  group-hover:text-teal-700/80 group-hover:scale-110
                   transition-all duration-300
                 '
               />
