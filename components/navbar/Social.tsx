@@ -41,13 +41,13 @@ function Social() {
   ];
 
   return (
-    <div className='flex flex-col lg:items-end items-center gap-2 text-white/90'>
+    <div className='flex flex-col lg:items-end items-center gap-2 text-gray-600'>
       <div className='flex items-center gap-2'>
-        <div className='w-8 h-px bg-gradient-to-r from-transparent to-white/30 hidden lg:block' />
-        <span className='text-xs font-medium text-white/60 tracking-wider uppercase'>
+        <div className='w-8 h-px bg-gradient-to-r from-transparent to-gray-600 hidden lg:block' />
+        <span className='text-xs font-medium text-gray-600 tracking-wider uppercase'>
           Connect With Us
         </span>
-        <div className='w-8 h-px bg-gradient-to-l from-transparent to-white/30 lg:hidden' />
+        <div className='w-8 h-px bg-gradient-to-l from-transparent to-gray-600 lg:hidden' />
       </div>
       {/* Enhanced Social Links */}
       <div className='flex items-center gap-2'>
@@ -76,8 +76,8 @@ function Social() {
             >
               <IconComponent
                 className='
-                  h-3 w-3 text-white/70 
-                  group-hover:text-white group-hover:scale-110
+                  h-3 w-3 text-gray-500 
+                  group-hover:text-blue-500/80 group-hover:scale-110
                   transition-all duration-300
                 '
               />

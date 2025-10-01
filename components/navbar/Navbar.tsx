@@ -40,13 +40,13 @@ import Container from "../global/Container";
 import Links from "./Links";
 import Logo from "./Logo";
 import Social from "./Social";
-import { FaPhoneAlt, FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className='bg-teal-800 shadow-lg sticky top-0 z-50'>
+    <nav className='bg-gray-100 shadow-lg sticky top-0 z-50'>
       {/* Top section */}
       <Container className='flex items-center justify-between py-4'>
         {/* Logo */}
@@ -74,7 +74,7 @@ function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className='sm:hidden bg-teal-700 text-white px-6 py-4 space-y-4 animate-slideDown'>
+        <div className='sm:hidden bg-purple-400 text-white px-6 py-4 space-y-4 animate-slideDown'>
           <Links />
           <Social />
         </div>

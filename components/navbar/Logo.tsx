@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import LogoImage from "@/public/images/logo/logo.png";
+import LogoImage from "@/public/images/logo/logo2.png";
 
 function Logo() {
   return (
@@ -23,48 +23,17 @@ function Logo() {
           className='w-32 h-32 sm:w-32 sm:h-32 lg:w-32 lg:h-32 transition-transform duration-300 group-hover:scale-105'
           priority
         />
-      </div>
-
-      {/* Enhanced Text Content */}
-      <div className='flex flex-col leading-tight space-y-0.5'>
-        {/* Main Brand Name */}
-        <div className='flex items-center space-x-3'>
-          <span className='text-4xl font-black bg-gradient-to-r from-rose-200 via-rose-250 to-teal-300 bg-clip-text text-transparent tracking-tight relative'>
-            CES
-            {/* Premium underline effect */}
-            <div className='absolute -bottom-1 left-0 h-0.5 w-0 bg-gradient-to-r from-blue-500 to-emerald-400 transition-all duration-700 group-hover:w-full'></div>
-          </span>
-        </div>
-
-        {/* Enhanced Tagline */}
-        <div className='flex items-center space-x-2'>
-          {/* <div className='h-px w-8 bg-gradient-to-r from-blue-500 to-emerald-400'></div> */}
-          <span className='text-xs text-slate-200 italic'>
-            Compassionate Excellence in Senior Care
-          </span>
-        </div>
-
-        {/* Company Type */}
-        <div className='flex items-center space-x-1'>
-          <span className='text-base font-semibold text-slate-300'>
-            Geriatric Care
-          </span>
-          <span className='px-3 py-1 text-xs font-bold text-white bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full shadow-md'>
-            LLC
-          </span>
-        </div>
-
         {/* Professional Trust Indicators */}
-        <div className='flex items-center space-x-2'>
+        {/* <div className='flex items-center space-x-2'>
           <div className='flex space-x-1'>
             <div className='h-2 w-2 rounded-full bg-emerald-500 animate-pulse'></div>
             <div className='h-2 w-2 rounded-full bg-blue-500'></div>
             <div className='h-2 w-2 rounded-full bg-indigo-500'></div>
           </div>
-          <span className='text-[9px] font-semibold text-slate-200 tracking-wide'>
+          <span className='text-[9px] font-semibold text-slate-800 tracking-wide'>
             Licensed • Trusted • Caring
           </span>
-        </div>
+        </div> */}
       </div>
 
       {/* Premium floating particles */}
