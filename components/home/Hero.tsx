@@ -15,7 +15,11 @@ function Hero() {
           of mind for seniors and their families.
         </p>
 
-        <Button asChild size='lg' className='mt-8 bg-teal-700 text-gray-100'>
+        <Button
+          asChild
+          size='lg'
+          className='mt-8 bg-gradient-to-r from-violet-200 via-violet-400 to-violet-500 text-gray-100'
+        >
           <Link href='/services'>Learn More</Link>
         </Button>
       </div>

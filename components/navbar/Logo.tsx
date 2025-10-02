@@ -23,17 +23,6 @@ function Logo() {
           className='w-32 h-32 sm:w-32 sm:h-32 lg:w-32 lg:h-32 transition-transform duration-300 group-hover:scale-105'
           priority
         />
-        {/* Professional Trust Indicators */}
-        {/* <div className='flex items-center space-x-2'>
-          <div className='flex space-x-1'>
-            <div className='h-2 w-2 rounded-full bg-emerald-500 animate-pulse'></div>
-            <div className='h-2 w-2 rounded-full bg-blue-500'></div>
-            <div className='h-2 w-2 rounded-full bg-indigo-500'></div>
-          </div>
-          <span className='text-[9px] font-semibold text-slate-800 tracking-wide'>
-            Licensed • Trusted • Caring
-          </span>
-        </div> */}
       </div>
 
       {/* Premium floating particles */}

@@ -116,7 +116,7 @@ function ContactPage() {
     {
       icon: Clock,
       title: "Office Hours",
-      info: "Mon-Fri: 8AM-6PM",
+      info: "Mon-Fri: 9:00AM-5:00PM",
       subInfo: "Weekend consultations available",
       color: "text-orange-600",
     },
@@ -342,7 +342,7 @@ function ContactPage() {
         </div>
         <h1 className='text-4xl md:text-4xl lg:text-4xl font-bold tracking-tight text-slate-700 mb-6'>
           Get in{" "}
-          <span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-teal-800'>
+          <span className='text-transparent bg-clip-text bg-gradient-to-r from-violet-300 via-violet-400 to-violet-500'>
             Touch
           </span>
         </h1>
@@ -454,7 +454,7 @@ function ContactPage() {
               <button
                 type='submit'
                 disabled={isSubmitting}
-                className='w-full bg-gradient-to-r from-emerald-600 to-teal-700 text-white py-4 px-8 rounded-xl font-bold text-lg hover:from-emerald-700 hover:to-teal-800 transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center space-x-3'
+                className='w-full bg-gradient-to-r from-violet-200 via-violet-400 to-violet-500 text-white py-4 px-8 rounded-xl font-bold text-lg hover:from-violet-700 hover:to-violet-800 transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center space-x-3'
               >
                 {isSubmitting ? (
                   <>

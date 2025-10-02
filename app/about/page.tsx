@@ -20,17 +20,17 @@ function AboutPage() {
       <div className='text-center lg:text-left'>
         <h1 className='text-4xl md:text-4xl lg:text-4xl font-bold tracking-tight text-slate-700 mb-6'>
           About{" "}
-          <span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-teal-800'>
+          <span className='text-transparent bg-clip-text bg-gradient-to-r from-violet-300 via-violet-400 to-violet-500'>
             Us
           </span>
         </h1>
 
         {/* Accent underline */}
-        <div className='mt-3 mb-6 h-1 w-20 mx-auto lg:mx-0 bg-gradient-to-r from-teal-500 to-emerald-400 rounded-full'></div>
+        <div className='mt-3 mb-6 h-1 w-20 mx-auto lg:mx-0 bg-gradient-to-r from-violet-200 via-violet-400 to-violet-500 rounded-full'></div>
 
         <p className='text-lg leading-relaxed text-slate-600 '>
           With a team of{" "}
-          <span className='font-semibold text-teal-600'>
+          <span className='font-semibold text-violet-500'>
             Trained, Trustworthy, and Empathetic Caregivers
           </span>
           , we are dedicated to enhancing quality of life and fostering a
@@ -39,7 +39,7 @@ function AboutPage() {
         </p>
 
         {/* Tagline / quote */}
-        <blockquote className='mt-8 italic text-teal-700 font-medium text-xl'>
+        <blockquote className='mt-8 italic text-violet-500 font-medium text-xl'>
           “Compassionate excellence in senior care, centered on dignity and
           respect.”
         </blockquote>
